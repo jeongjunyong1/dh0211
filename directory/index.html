@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>택배 수령 장소 입력</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+          <span class="header-title">준용 택배</span>
+        </div>
+      </header>
+      
+
+  <div class="container">
+    <header>
+      <h2>편한 곳을 선택해 주세요</h2>
+      <p>배송원의 업무 처리를 돕기 위해 위치 정보를 선택하고 메시지를 입력 후 저장 버튼을 눌러주세요.</p>
+    </header>
+
+    <div class="button-group">
+        <button class="option-button" data-option="주소지">주소지</button>
+        <button class="option-button" data-option="정비실">정비실</button>
+        <button class="option-button" data-option="택배 무인함">택배 무인함</button>
+        <button class="option-button" data-option="문앞">문앞</button>
+        <button class="option-button" data-option="기타">기타</button>
+      </div>
+      
+      <textarea id="request-message" placeholder="배송원에게 전달할 기타 요청사항을 입력해 주세요." rows="5"></textarea>
+      <button id="save-button" onclick="saveRequest()">저장</button>
+      
+      
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

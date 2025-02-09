@@ -1,0 +1,124 @@
+/* 전체 레이아웃 설정 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding-top: 120px; /* 헤더와 컨텐츠 간 여백 */
+}
+  
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+}
+  
+header h1 {
+    font-size: 24px;
+    color: #007bff;
+}
+  
+header p {
+    font-size: 16px;
+    color: #555;
+}
+  
+/* 상단 헤더 스타일 */
+.main-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.header-title {
+    font-size: 28px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
+}
+  
+/* 버튼 그룹 스타일 */
+.button-group {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+  
+.option-button {
+    background-color: white;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-grow: 1;
+    max-width: 200px;
+    text-align: center;
+}
+  
+.option-button:hover {
+    background-color: #007bff;
+    color: white;
+}
+/* 버튼 선택 시 색상 유지 */
+.option-button.selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* 저장된 요청사항 출력 스타일 */
+  .saved-content {
+    background-color: #e9f7ff;
+    border: 1px solid #007bff;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  
+/* 메시지 입력 폼 */
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+  
+#save-button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+}
+  
+#save-button:hover {
+    background-color: #0056b3;
+}
